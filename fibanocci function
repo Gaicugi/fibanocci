@@ -1,0 +1,15 @@
+import math
+def isPerfectSquare(b):
+    a = int(math.sqrt(b))
+    return a*a == b
+ 
+def isFibonacci(n):
+ 
+    return isPerfectSquare(5*n*n + 4) or isPerfectSquare(5*n*n - 4)
+    
+for y in range(2,13):
+     if (isFibonacci(y) == True):
+         print(y, "is a Fibonacci Number")
+     else:
+     
+         print(y,"is a not Fibonacci Number")
